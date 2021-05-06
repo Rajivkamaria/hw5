@@ -53,9 +53,9 @@ window.addEventListener('DOMContentLoaded', async function() {
             <div class="font-bold text-3xl">${dayDetes} Day Forecast</div>
           </div>`
           // Loop through number of days entered by user
-        for (let i=0;i<dayDetes;i++){
-        let forecast = document.querySelector(`.forecast`)
-        let weather.loop = weather.forecast.forecastday[i]
+          let forecast = document.querySelector(`.forecast`)
+          for (let i=0;i<dayDetes;i++){
+          let weather.loop = weather.forecast.forecastday[i]
                 // Insert appropriate HTML for # of days user entereds
         forecast.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-8">
         <div>
