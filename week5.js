@@ -54,10 +54,10 @@ window.addEventListener('DOMContentLoaded', async function() {
           </div>`
           // Loop through number of days entered by user
         for (let i=0;i<dayDetes;i++){
-        let forecast.detes = document.querySelector(`.forecast`)
+        let forecast = document.querySelector(`.forecast`)
         let weather.loop = weather.forecast.forecastday[i]
                 // Insert appropriate HTML for # of days user entereds
-        forecastdetes.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-8">
+        forecast.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-8">
         <div>
           <img src="https:${weather.loop.day.condition.icon}" class="mx-auto">
           <h1 class="text-2xl text-bold text-gray-500">${weather.loop.date}</h1>
